@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>User Registration</title>
+
+        <link rel="stylesheet" href="./CSS/style.css"/>
+    </head>
+    <body>
+
+        <section>
+            <div>User Registration</div>
+
+            <div class="div-main">
+                <label for="mobile">Mobile</label>
+                <div>
+                    <input type="tel" id="mobile">
+                </div>
+            </div>
+
+            <div class="div-main">
+                <label for="name">Name</label>
+                <div>
+                    <input type="text" id="name">
+                </div>
+            </div>
+
+            <div class="div-main">
+                <div>Gender</div>
+                <div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male"/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="female"/>
+                </div>
+                <div id="genderMsg"></div>
+            </div>
+
+            <div class="div-main">
+                <label for="country">Country</label>
+                <div>
+                    <select id="country">
+                        <option hidden>Select Country</option>
+                        <option>Australia</option>
+                        <option>Singapore</option>
+                        <option>Italy</option>
+                        <option>Dubai</option>
+                        <option>Sir Lanka</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="div-main">
+                <label for="password">Password</label>
+                <div>
+                    <input type="password" id="password"/>
+                </div>
+            </div>
+
+            <button type="submit" onclick="userRegistration();">Create New Account</button>
+
+        </section>
+
+        <script src="./JS/script.js"></script>
+    </body>
+</html>
